@@ -1,0 +1,122 @@
+/* initial formmating */
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   
+}
+ 
+
+/*setting and styling the div containing the othe divs*/
+
+.bigbox{
+    width: 850px;
+    min-height: 450px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+ 
+
+/* setting the sylte for the body*/
+
+body{
+   
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+/*s adding background colors*/
+
+.first{
+   background-color:  hsl(31, 77%, 52%)
+   
+}
+.second{
+   background-color:  hsl(184, 100%, 22%);
+}
+.third{
+   background-color:  hsl(179, 100%, 13%);
+}
+/*flexing and styling the differnt divs*/
+
+.card{
+   padding: 35px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 30px;
+    
+}
+/*spacing and styling the h1*/
+
+.card h1{
+   color:  hsl(0, 0%, 95%);
+   font-family: 'Lexend Deca', sans-serif; 
+   font: weight 700px;
+}
+/*paragraphs*/
+.card p{
+   color: hsla(0, 0%, 100%, 0.75);
+   font-family:'Big Shoulders Display', cursive;
+   font-size: 15px;
+   font-weight: 400;
+   flex-grow:1;
+}
+/*spacing and styling the butons*/
+
+.card button{
+   background-color:hsl(0, 0%, 95%)  ;
+   outline:none;
+   padding: 10px 30px;
+   border: 2px solid hsl(0, 0%, 95%);
+   border-radius: 30px;
+   font-family:'Big Shoulders Display', cursive;
+
+}
+
+/*for text in the buttons*/
+.btn1{
+   color:  hsl(31, 77%, 52%);
+}
+
+.second button{
+    color: hsl(184, 100%, 22%);
+}
+.third button{
+   color:  hsl(179, 100%, 13%);
+}
+
+.card button:hover{
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    padding: 10px 28px;
+    transition: 0.4s;
+ }
+ /*for mobile resposiveness*/
+
+ @media screen and (max-width: 600px) {
+   body{
+     padding: 40px 35px;
+   }
+   .bigbox{
+     flex-direction: column;
+   }
+}
+ 
+header {
+   display: inline;
+   align-self: center;
+   margin: 25px;
+   font-size: 30px;
+   
+    
+   
+} 
+ 
